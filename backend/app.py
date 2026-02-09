@@ -46,7 +46,7 @@ os.makedirs(app.config['OUTPUT_FOLDER'], exist_ok=True)
 YOLOV8_MODEL_PATH = r"C:\Users\Ayush Sharma\OneDrive\Desktop\SmartSeg\backend\model\best_e.pt"
 model_ewaste = YOLO(YOLOV8_MODEL_PATH)
 
-YOLOV5_MODEL_DIR = r"C:\Users\Ayush Sharma\OneDrive\Desktop\SmartSeg\backend\model\yolov5"
+YOLOV5_MODEL_DIR = r"C:\Users\Ayush Sharma\OneDrive\Documents\yolov5"
 YOLOV5_MODEL_PATH = r"C:\Users\Ayush Sharma\OneDrive\Desktop\SmartSeg\backend\model\best.pt"
 model_waste = torch.hub.load(YOLOV5_MODEL_DIR, 'custom', source='local',
                              path=YOLOV5_MODEL_PATH, force_reload=False)
